@@ -1,6 +1,7 @@
 // pages/index.js
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
+import styles from "./styles/home.module.css";
 
 export default function Home() {
   return (
@@ -9,14 +10,26 @@ export default function Home() {
         <title>Mon Portfolio</title>
         <meta name="description" content="Portfolio de [Ton Nom]" />
       </Head>
-      <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-          <Link href="/about">À propos</Link> | <Link href="/projects">Projets</Link> | <Link href="/contact">Contact</Link>
-        </nav>
-      </header>
-      <main>
-        <p>Je suis développeur web spécialisé en React et Next.js.</p>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <h1>
+            MY NAME IS <span className={styles.name}>YUSEF BOULAM...</span>
+          </h1>
+          <h2>
+            <span className={styles.function}>Developpeur Web </span> based in
+            Nice
+          </h2>
+
+          <Link href="/contact">
+            <button className={styles.link}>Let's talk with me !</button>
+          </Link>
+          <div className={styles.contact}>
+            <p>06 37 05 15 43</p>
+            <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
+              yusef.boulam@gmail.com
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   );

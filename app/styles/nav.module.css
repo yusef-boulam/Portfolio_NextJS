@@ -1,3 +1,7 @@
+.header {
+    background-color: black;
+}
+
 .nav {
     display: flex;
     position: relative;
@@ -10,7 +14,6 @@
     max-width: 1500px;
     margin: auto;
     padding-top: 20px;
-    background-color: rgb(253, 249, 242);
 }
 
 .link {
@@ -24,6 +27,7 @@
     align-items: center;
     font-weight: 500;
     font-size: 20px;
+    color: white;
 }
 
 .logo {
@@ -57,7 +61,7 @@
 }
 
 .navLink {
-    color: black;
+    color: white;
     font-weight: 500;
     padding: 10px 1%;
     border: none;

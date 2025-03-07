@@ -1,0 +1,62 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 20px;
+}
+
+.container h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.function {
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 40px;
+}
+
+.contact p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 50px;
+}
