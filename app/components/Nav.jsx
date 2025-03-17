@@ -51,19 +51,13 @@ const Nav = () => {
               <Link href="/about" onClick={() => setToggleDropdown(false)}>
                 About
               </Link>
-              <Link href="/recipe" onClick={() => setToggleDropdown(false)}>
+              <Link href="/project" onClick={() => setToggleDropdown(false)}>
                 Projects
               </Link>
-              <Link
-                href="/shopping-list"
-                onClick={() => setToggleDropdown(false)}
-              >
+              <Link href="/contact" onClick={() => setToggleDropdown(false)}>
                 Contact
               </Link>
-              <Link
-                href="/create-recipe"
-                onClick={() => setToggleDropdown(false)}
-              >
+              <Link href="/resume" onClick={() => setToggleDropdown(false)}>
                 Resume
               </Link>
             </div>
