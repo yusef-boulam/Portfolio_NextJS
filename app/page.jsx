@@ -13,7 +13,8 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <h1>
-            MY NAME IS <span className={styles.name}>YUSEF BOULAM...</span>
+            HELLO, <br></br>MY NAME IS{" "}
+            <span className={styles.name}>YUSEF BOULAM...</span>
           </h1>
           <h2>
             <span className={styles.function}>Developpeur Web </span> based in
