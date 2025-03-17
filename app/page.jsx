@@ -13,23 +13,25 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <h1>
-            HELLO, <br></br>MY NAME IS{" "}
-            <span className={styles.name}>YUSEF BOULAM...</span>
+            <span className={styles.hello}>HELLO </span>
+            <span className={styles.nameContainer}>
+              MY NAME IS <span className={styles.name}>YUSEF BOULAM...</span>
+            </span>
           </h1>
           <h2>
             <span className={styles.function}>Developpeur Web </span> based in
             Nice
           </h2>
 
-          <Link href="/contact">
+          <Link href="/contact" className={styles.linkContainer}>
             <button className={styles.link}>Let's talk with me !</button>
           </Link>
-          <div className={styles.contact}>
-            <p>06 37 05 15 43</p>
-            <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
-              yusef.boulam@gmail.com
-            </a>
-          </div>
+        </div>
+        <div className={styles.contact}>
+          <p>06 37 05 15 43</p>
+          <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
+            yusef.boulam@gmail.com
+          </a>
         </div>
       </main>
     </div>

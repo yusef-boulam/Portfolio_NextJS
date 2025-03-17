@@ -23,9 +23,24 @@
     margin-bottom: 20px;
 }
 
+.nameContainer {
+    margin: auto;
+}
+
 .name {
     font-weight: 600;
 }
+
+.container h1 {
+    display: flex;
+}
+
+.hello {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
 
 .container h2 {
     font-size: 25px;
@@ -42,6 +57,10 @@
     font-weight: 500;
 }
 
+.cintainerLink {
+    margin: 0;
+}
+
 .link {
     background-color: black;
     color: white;
@@ -55,8 +74,16 @@
     margin-top: 40px;
 }
 
+
+
 .contact p {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+.contact a {
+    font-size: 16px;
+    font-weight: 600;
     margin-right: 50px;
 }
