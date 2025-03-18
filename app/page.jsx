@@ -15,7 +15,7 @@ export default function Home() {
           <h1>
             <span className={styles.hello}>HELLO </span>
             <span className={styles.nameContainer}>
-              MY NAME IS <span className={styles.name}>YUSEF BOULAM...</span>
+              MY NAME IS <span className={styles.name}>YUSEF BOULAM</span>
             </span>
           </h1>
           <h2>
@@ -28,10 +28,24 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.contact}>
-          <p>06 37 05 15 43</p>
-          <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
-            yusef.boulam@gmail.com
-          </a>
+          <div className={styles.containercallPhone}>
+            <img
+              src="/assets/images/home/phone-call.svg"
+              alt="phone"
+              className={styles.iconeCallPhone}
+            />
+            <p>06 37 05 15 43</p>
+          </div>
+          <div className={styles.containerEmail}>
+            <img
+              src="/assets/images/home/email.svg"
+              alt="phone"
+              className={styles.iconeEmail}
+            />
+            <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
+              yusef.boulam@gmail.com
+            </a>
+          </div>
         </div>
       </main>
     </div>
