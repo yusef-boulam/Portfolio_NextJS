@@ -64,11 +64,48 @@
 }
 
 .link {
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
     background-color: black;
-    color: white;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
     padding: 10px 20px;
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-élément pour l'effet de surbrillance */
+.link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+}
+
+/* Animation du pseudo-élément lors du survol */
+.link:hover::before {
+    animation: slide 0.75s forwards;
+}
+
+@keyframes slide {
+    to {
+        left: 150%;
+    }
 }
 
 .contact {
@@ -79,6 +116,12 @@
 .containercallPhone {
     display: flex;
 }
+
+.containerEmail {
+    display: flex;
+    align-items: center;
+}
+
 
 
 
