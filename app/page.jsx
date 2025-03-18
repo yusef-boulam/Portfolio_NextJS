@@ -11,41 +11,60 @@ export default function Home() {
         <meta name="description" content="Portfolio de [Ton Nom]" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.container}>
-          <h1>
-            <span className={styles.hello}>HELLO </span>
-            <span className={styles.nameContainer}>
-              MY NAME IS <span className={styles.name}>YUSEF BOULAM</span>
-            </span>
-          </h1>
-          <h2>
-            <span className={styles.function}>Developpeur Web </span> based in
-            Nice
-          </h2>
+        <div>
+          <div className={styles.container}>
+            <h1>
+              <span className={styles.hello}>HELLO </span>
+              <span className={styles.nameContainer}>
+                MY NAME IS <span className={styles.name}>YUSEF BOULAM</span>
+              </span>
+            </h1>
+            <h2>
+              <span className={styles.function}>Developpeur Web </span> based in
+              Nice
+            </h2>
 
-          <Link href="/contact" className={styles.linkContainer}>
-            <button className={styles.link}>Let's talk with me !</button>
-          </Link>
+            <Link href="/contact" className={styles.linkContainer}>
+              <button className={styles.link}>Let's talk with me !</button>
+            </Link>
+          </div>
+          <div className={styles.contact}>
+            <div className={styles.containercallPhone}>
+              <img
+                src="/assets/images/home/phone-call.svg"
+                alt="phone"
+                className={styles.iconeCallPhone}
+              />
+              <p>06 37 05 15 43</p>
+            </div>
+            <div className={styles.containerEmail}>
+              <img
+                src="/assets/images/home/email.svg"
+                alt="phone"
+                className={styles.iconeEmail}
+              />
+              <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
+                yusef.boulam@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
-        <div className={styles.contact}>
-          <div className={styles.containercallPhone}>
+        <div className={styles.containerSocial}>
+          <Link href="https://www.linkedin.com/in/yusef-boulam/">
             <img
-              src="/assets/images/home/phone-call.svg"
-              alt="phone"
-              className={styles.iconeCallPhone}
+              src="/assets/images/home/linkedin.svg"
+              alt="linkedin"
+              className={styles.iconeLinkedin}
             />
-            <p>06 37 05 15 43</p>
-          </div>
-          <div className={styles.containerEmail}>
+          </Link>
+          <Link href="https://github.com/yusef-boulam">
             <img
-              src="/assets/images/home/email.svg"
-              alt="phone"
-              className={styles.iconeEmail}
+              src="/assets/images/home/github.svg"
+              alt="github"
+              className={styles.iconeGithub}
             />
-            <a href="mailto:yusef.boulam@gmail.com" className={styles.email}>
-              yusef.boulam@gmail.com
-            </a>
-          </div>
+          </Link>
+          <div className={styles.ligneGrise}></div>
         </div>
       </main>
     </div>

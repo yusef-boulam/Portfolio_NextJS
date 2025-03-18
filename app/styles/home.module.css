@@ -102,6 +102,41 @@
     animation: slide 0.75s forwards;
 }
 
+.containerSocial {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.ligneGrise {
+    width: 1px;
+    /* Définit la largeur de la ligne */
+    height: 100px;
+    /* Définit l'épaisseur de la ligne */
+    background-color: rgb(163, 161, 161);
+    /* Définit la couleur de la ligne */
+    margin-right: 80px;
+    transform: rotate(-90deg);
+}
+
+.iconeGithub {
+    height: 20px;
+    margin-right: 25px;
+}
+
+.iconeLinkedin {
+    height: 20px;
+    margin-right: 25px;
+}
+
 @keyframes slide {
     to {
         left: 150%;
