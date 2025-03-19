@@ -1,26 +1,41 @@
 .main {
     display: flex;
-    flex-direction: column;
+
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 85vh;
+    max-width: 1500px;
+    margin: auto;
 
 }
 
 .container {
+    width: 45%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container2 {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     padding-top: 20px;
 }
 
-.container h1 {
+.container2 h1 {
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.containerText {
+    max-width: 400px;
 }
 
 .nameContainer {
@@ -31,7 +46,7 @@
     font-weight: 600;
 }
 
-.container h1 {
+.container2 h1 {
     display: flex;
 }
 
@@ -44,7 +59,7 @@
 }
 
 
-.container h2 {
+.container2 h2 {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -54,7 +69,7 @@
     font-weight: 600;
 }
 
-.container p {
+.container2 p {
     font-size: 20px;
     font-weight: 500;
 }
@@ -97,15 +112,24 @@
     transform: skewX(-25deg);
 }
 
+.containerPicture {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.pictureProfile {
+    height: 300px;
+
+}
+
 /* Animation du pseudo-élément lors du survol */
 .link:hover::before {
     animation: slide 0.75s forwards;
 }
 
 .containerSocial {
-    position: fixed;
-    right: 0;
-
+    margin-left: auto;
     transform: rotate(-90deg);
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -113,13 +137,12 @@
     flex-direction: column;
     align-items: center;
 
-
 }
 
 .ligneGrise {
     width: 1px;
     /* Définit la largeur de la ligne */
-    height: 100px;
+    height: 150px;
     /* Définit l'épaisseur de la ligne */
     background-color: rgb(163, 161, 161);
     /* Définit la couleur de la ligne */
@@ -128,13 +151,13 @@
 }
 
 .iconeGithub {
-    height: 20px;
-    margin-right: 25px;
+    height: 25px;
+    margin-left: 25px;
 }
 
 .iconeLinkedin {
-    height: 20px;
-    margin-right: 25px;
+    height: 25px;
+    margin-left: 35px;
 }
 
 @keyframes slide {
@@ -175,7 +198,6 @@
 .iconeCallPhone {
     height: 18px;
     margin-right: 15px;
-    margin-left: 98px;
 }
 
 .iconeEmail {
