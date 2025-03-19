@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav"; // La barre de navigation de votre site
+import styles from "./styles/layout.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,12 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Nav />
         {children}
+        <footer className={styles.footer}>
+          <p>
+            Porfolio réalisé avec <span>NextJS</span> - © 2025 Yusef Boulam. All
+            rights reserved.
+          </p>
+        </footer>
       </body>
     </html>
   );
