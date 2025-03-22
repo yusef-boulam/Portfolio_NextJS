@@ -123,6 +123,11 @@
 
 }
 
+.containerEmail:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1) translateX(10px);
+}
+
 /* Animation du pseudo-élément lors du survol */
 .link:hover::before {
     animation: slide 0.75s forwards;
@@ -155,9 +160,20 @@
     margin-left: 25px;
 }
 
+.iconeGithub:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+
+}
+
 .iconeLinkedin {
     height: 25px;
     margin-left: 35px;
+}
+
+.iconeLinkedin:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 @keyframes slide {
@@ -238,7 +254,6 @@
     .container h1 {
         font-size: 50px;
     }
-
 
 
 
