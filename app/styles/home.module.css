@@ -236,11 +236,23 @@
 
 
 
-@media (max-width: 980px) {}
+@media (max-width: 952px) {
+
+
+    .containerPicture img {
+        height: 100px;
+    }
+
+    .container {
+        width: 80%;
+
+    }
+
+}
 
 
 
-@media (max-width: 610px) {
+@media (max-width: 617px) {
 
     .main {
         flex-direction: column;
@@ -268,4 +280,13 @@
     }
 
 
+    .containerSocial {
+
+        margin-left: 0;
+        transform: none;
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
