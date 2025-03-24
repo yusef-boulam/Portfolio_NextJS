@@ -112,6 +112,11 @@
     transform: skewX(-25deg);
 }
 
+/* Animation du pseudo-élément lors du survol */
+.link:hover::before {
+    animation: slide 0.75s forwards;
+}
+
 .containerPicture {
     width: 30%;
     display: flex;
@@ -128,10 +133,6 @@
     transform: scale(1.1) translateX(10px);
 }
 
-/* Animation du pseudo-élément lors du survol */
-.link:hover::before {
-    animation: slide 0.75s forwards;
-}
 
 .containerSocial {
     margin-left: auto;

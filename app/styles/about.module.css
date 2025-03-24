@@ -5,6 +5,10 @@
     margin: auto;
 }
 
+.main p {
+    line-height: 1.6;
+}
+
 .containerWelcome {
     width: 30%;
     padding: 50px;
@@ -19,21 +23,40 @@
 .containerAccroche {
     margin-left: 100px;
     width: 40%;
+    margin-top: 150px;
 }
 
 
 .contact {
     display: flex;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .containercallPhone {
     display: flex;
 }
 
+.containerAge {
+    display: flex;
+    margin-left: 40px;
+}
+
 .containerEmail {
     display: flex;
     align-items: center;
+    margin-top: 30px;
+}
+
+.containerEmail:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1) translateX(10px);
+}
+
+.containerTown {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+
 }
 
 .contact p {
@@ -43,7 +66,7 @@
 }
 
 .contact a {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     margin-right: 50px;
 }
@@ -56,4 +79,38 @@
 .iconeEmail {
     height: 18px;
     margin-right: 15px;
+}
+
+.iconeAge {
+    height: 18px;
+    margin-right: 15px;
+}
+
+.iconeTown {
+    height: 18px;
+    margin-right: 15px;
+}
+
+.containerDegree {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+
+}
+
+.containerDegree p {
+
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    width: 600px;
+
+}
+
+.iconeDegree {
+    height: 18px;
+
 }
